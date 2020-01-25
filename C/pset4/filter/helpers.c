@@ -22,6 +22,16 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     }
 }
 
+// stops max value at 255 preventing overflow
+int limit(int RGB)
+{
+    if (RGB > 255)
+    {
+        RGB = 255;
+    }
+    return RGB;
+}
+
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -32,25 +42,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < height; j++)
         {
-            sepiaBlue = round(0.272 * image[j][i].rgbtRed + 0.534 * image[j][i].rgbtGreen + 0.131 * image[j][i].rgbtBlue);
-            sepiaGreen = round(0.349 * image[j][i].rgbtRed + 0.686 * image[j][i].rgbtGreen + 0.168 * image[j][i].rgbtBlue);
-            sepiaRed = round(0.393 * image[j][i].rgbtRed + 0.769 * image[j][i].rgbtGreen + 0.189 * image[j][i].rgbtBlue);
-
-            // locks the max value to 255 preventing overflow
-            if (sepiaBlue > 255)
-            {
-                sepiaBlue = 255;
-            }
-
-            if (sepiaGreen > 255)
-            {
-                sepiaGreen = 255;
-            }
-
-            if (sepiaRed > 255)
-            {
-                sepiaRed = 255;
-            }
+            sepiaBlue = limit(round(0.272 * image[j][i].rgbtRed + 0.534 * image[j][i].rgbtGreen + 0.131 * image[j][i].rgbtBlue));
+            sepiaGreen = limit(round(0.349 * image[j][i].rgbtRed + 0.686 * image[j][i].rgbtGreen + 0.168 * image[j][i].rgbtBlue));
+            sepiaRed = limit(round(0.393 * image[j][i].rgbtRed + 0.769 * image[j][i].rgbtGreen + 0.189 * image[j][i].rgbtBlue));
 
             image[j][i].rgbtBlue = sepiaBlue;
             image[j][i].rgbtGreen = sepiaGreen;
