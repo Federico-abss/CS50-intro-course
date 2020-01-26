@@ -20,4 +20,6 @@ Hope this is helpful to other students, you are free to mail me for any question
     + [less](/C/pset4/filter)
     + [more](/C/pset4/border-detection)
   * [recover](/C/pset4/recover)
-- [Problem Set 5: ToDo] //
+- [Problem Set 5: Speller](/C/pset5/speller) - <a href='https://cs50.harvard.edu/x/2020/psets/4/'> Speller assignment</a>
+  * [helpers.c](/C/pset5/speller/helpers.c)
+- [Problem Set 6: ToDo] //
