@@ -26,8 +26,13 @@ for item in dnaSequences:
 for key in sequences:
     l = len(key)
     tempMax = 0
+   temp = 0
     for i in range(len(dna)):
-        temp = 0
+        # after having counted a sequence it skips at the end of it to avoid counting again
+        while temp > 0:
+            temp -= 1
+            continue
+            
         # if the segment of dna corresponds to the key and there is a repetition of it we start counting
         if dna[i: i + l] == key:
             while dna[i - l: i] == dna[i: i + l]:
