@@ -26,7 +26,7 @@ for item in dnaSequences:
 for key in sequences:
     l = len(key)
     tempMax = 0
-   temp = 0
+    temp = 0
     for i in range(len(dna)):
         # after having counted a sequence it skips at the end of it to avoid counting again
         while temp > 0:
