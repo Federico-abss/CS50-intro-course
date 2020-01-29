@@ -31,4 +31,6 @@ Hope this is helpful to other students, you are free to contact me for any quest
   * [credit](/Python/pset6/credit)
   * [readability](/Python/pset6/readability)
   * [dna](/Python/pset6/dna)
-- [Problem Set 7: TODO] //
+- [Problem Set 7: SQL](/Python/pset7/) - <a href='https://cs50.harvard.edu/x/2020/psets/6/'> Assignments 7</a>
+  * [movies](/Python/pset7/movies)
+- [Problem Set 8: TODO]
