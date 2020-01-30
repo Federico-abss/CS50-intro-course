@@ -12,6 +12,7 @@ dna = dnalist[0]
 # create a dictionary where we will store the sequences we intend to count
 sequences = {}
 
+# extract the sequences from the database into a list
 with open(argv[1]) as peoplefile:
     people = reader(peoplefile)
     for row in people:
@@ -19,6 +20,7 @@ with open(argv[1]) as peoplefile:
         dnaSequences.pop(0)
         break
 
+# copy the list in a dictionary where the genes are the keys
 for item in dnaSequences:
     sequences[item] = 1
 
@@ -32,15 +34,16 @@ for key in sequences:
         while temp > 0:
             temp -= 1
             continue
-            
+
         # if the segment of dna corresponds to the key and there is a repetition of it we start counting
         if dna[i: i + l] == key:
             while dna[i - l: i] == dna[i: i + l]:
                 temp += 1
                 i += l
-                # it compares the value to the previous longest sequence and if it is longer it overrides it
-                if temp > tempMax:
-                    tempMax = temp
+
+            # it compares the value to the previous longest sequence and if it is longer it overrides it
+            if temp > tempMax:
+                tempMax = temp
 
     # store the longest sequences in the dictionary using the correspondent key
     sequences[key] += tempMax
