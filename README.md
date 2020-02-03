@@ -42,4 +42,4 @@ Every exercise in this repository scored 100% on submission.
 - [Problem Set 8: TODO]
 
 DISCLAIMER:
-Please don't just copy the code, it's totally pointless if you actually wanna learn the subject and is against the policy of the course.
+Please don't just copy the code, it's totally pointless if you actually wanna learn the subject and against the policy of the course.
