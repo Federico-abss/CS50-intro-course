@@ -61,7 +61,6 @@ bool load(const char *dictionary)
 {
     // opens the dictionary and initializes temporary space to hold the words
     FILE *file = fopen(dictionary, "r");
-    node *tmp;
     char *dictWord = malloc(LENGTH);
     if (dictWord == NULL)
     {
