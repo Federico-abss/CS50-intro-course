@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <p>Register or <a href='/login'>login</a> if you already have an account</p><br>
+    <form action="/register" method="post">
+        <div class="form-group">
+            <input id='username' autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <br><p class='error'>Must contain at least 8 characters, <br> including a letter and a number</p>
+            <input id='pass' class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+            <input id='confirm-pass' class="form-control" name="confirm-password" placeholder="Confirm Password" type="password">
+        </div>
+        <button id='submit' class="btn btn-primary" type="submit">Register</button>
+    </form>
+
+    <script>
+    // password validation, you can submit only if the pass is at least 8 characters and contains only alphanumeric characters
+        document.querySelector('#submit').disabled = true;
+        document.querySelector('#pass').onkeyup = function() {
+            let password = document.querySelector('#pass').value;
+
+            if (password.length > 7 && password.match(/^[0-9a-z]+$/i) && password.match(/\d/) && password.match(/[a-z]/i)){
+                document.querySelector('#submit').disabled = false;
+            }
+            else {
+                document.querySelector('#submit').disabled = true;
+            }
+        }
+    </script>
+{% endblock %}
+
+

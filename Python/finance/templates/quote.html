@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <button id="submit" class="btn btn-primary" type="submit">Quote</button>
+    </form><br><br>
+
+    {% if stock %}
+        <h4>A stock of {{ stock['name'] }} {{ stock['symbol'] }} is worth {{ stock['price'] }} $</h4>
+    {% endif %}
+{% endblock %}
