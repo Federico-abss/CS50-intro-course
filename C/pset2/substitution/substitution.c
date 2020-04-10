@@ -39,10 +39,8 @@ int main(int argc, string argv[])
         {
             if (key[i] == key[j])
             {
-                {
-                    printf("Usage: ./substitution key\n");
-                    return 1;
-                }
+                printf("Usage: ./substitution key\n");
+                return 1;
             }
         }
     }
