@@ -1,9 +1,10 @@
-I made this repository to post my solutions to Harvard University's <a href='https://www.edx.org/course/cs50s-introduction-to-computer-science'>2020 CS50 introduction to computer science</a> exercises and document my progress during the course. <br>
+## cs50 Introduction To Computer Science
+I made this repository to post my solutions to Harvard University's <a href='https://www.edx.org/course/cs50s-introduction-to-computer-science'>2020 CS50 intro course</a> exercises and document my progress during the course. <br>
 You can find the materials for the course <a href='https://cs50.harvard.edu/x/2020/'>here</a> and look at the assignments specifications linked right of every section in the table of contents. <br>
 Hope this is helpful to other students, you are free to contact me for any question or clarification.
 Every exercise in this repository scored 100% on submission.
 
-<h2> Table Of Contents </h2>
+## Table Of Contents
 
 - [Problem Set 1: C](/C/pset1) - <a href='https://cs50.harvard.edu/x/2020/psets/1/'> Assignments 1</a>
   * [hello](/C/pset1/hello)
@@ -44,4 +45,4 @@ Every exercise in this repository scored 100% on submission.
 - [Final Project: Soon]
 
 DISCLAIMER:
-Please don't just copy the code, it's totally pointless if you actually wanna learn the subject and against the policy of the course.
+Please don't just copy the code mindlessly without trying to solve the problems yourself, it's totally pointless if you actually wanna how to write software and a blatant violation of the academic honesty policy of the course. 
