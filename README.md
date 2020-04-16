@@ -42,7 +42,9 @@ Every exercise in this repository scored 100% on submission.
   * [houses](/Python/pset7/houses/houses)
 - [Problem Set 8: Web](/Python/finance) - <a href='https://cs50.harvard.edu/x/2020/tracks/web/'> Web Tracks</a>
   * [finance](/Python/finance)
-- [Final Project: Soon]
+- [Final Project: Lispy](https://github.com/Federico-abss/Lispy)
+   * An interpreted, functional programming language based on Lisp and written in C. <br>
+    Follow [the instructions](https://github.com/Federico-abss/Lispy#using-cs50-ide-step-by-step) to try it in your ide!
 
 DISCLAIMER:
 Please don't just copy the code mindlessly without trying to solve the problems yourself, it's totally pointless if you actually wanna how to write software and a blatant violation of the academic honesty policy of the course. 
