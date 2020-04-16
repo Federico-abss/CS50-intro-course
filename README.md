@@ -46,5 +46,5 @@ Every exercise in this repository scored 100% on submission.
    * An interpreted, functional programming language based on Lisp and written in C. <br>
     Follow [the instructions](https://github.com/Federico-abss/Lispy#using-cs50-ide-step-by-step) to try it in your ide!
 
-DISCLAIMER:
+#### DISCLAIMER:
 Please don't just copy the code mindlessly without trying to solve the problems yourself, it's totally pointless if you actually wanna how to write software and a blatant violation of the academic honesty policy of the course. 
