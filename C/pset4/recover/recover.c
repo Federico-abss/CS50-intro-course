@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
     FILE *img;
     char filename[7];
     unsigned char *bf = malloc(512);
-    int end = 1000;
     int counter = 0;
 
     while (fread(bf, 512, 1, file))
