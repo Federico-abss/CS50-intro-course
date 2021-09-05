@@ -57,23 +57,15 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     //use of a temporary array to swap values
-    int temp[3];
-    for (int j = 0; j < height; j++)
+    RGBTRIPLE temp;
+    
+    for (int j = 0; j < width / 2; j++)
     {
-        for (int i = 0; i < width / 2; i++)
+        for (int i = 0; i < height; i++)
         {
-            temp[0] = image[j][i].rgbtBlue;
-            temp[1] = image[j][i].rgbtGreen;
-            temp[2] = image[j][i].rgbtRed;
-
-            // swap pixels with the ones on the opposite side of the picture and viceversa
-            image[j][i].rgbtBlue = image[j][width - i - 1].rgbtBlue;
-            image[j][i].rgbtGreen = image[j][width - i - 1].rgbtGreen;
-            image[j][i].rgbtRed = image[j][width - i - 1].rgbtRed;
-
-            image[j][width - i - 1].rgbtBlue = temp[0];
-            image[j][width - i - 1].rgbtGreen = temp[1];
-            image[j][width - i - 1].rgbtRed = temp[2];
+            temp = image[i][j];
+            image[i][j] = image[i][width - j - 1];
+            image[i][width - j - 1] = temp;
         }
     }
 }
